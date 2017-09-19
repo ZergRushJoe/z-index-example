@@ -1,0 +1,19 @@
+html
+    head
+        title z-index
+        script(src="https://unpkg.com/vue")
+    body
+        div(id='headerPlaceHolder')
+        zIndexItem(id='header' v-bind:name='header' v-bind:position='sticky' v-bind:zIndex='30')
+        zIndexItem(id='sidebar' v-bind:name='Side Bar' v-bind:position='fixed' v-bind:zIndex='30')
+            expandableItem
+            expandableItem
+        div(id='body')
+            -for(let i = 0; i <6;++i)
+                zIndexItem(class='section' v-bind:name='item' v-bind:position='relative' v-bind:zIndex='20')
+                    expandableItem
+                    expandableItem
+
+
+
+        script(src="./static/js/main.js")
