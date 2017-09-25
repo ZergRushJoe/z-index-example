@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 *
 {
     padding:0;
     margin:0;
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 /*General styling for components*/
@@ -14,6 +17,7 @@
     align-items: center;
     flex-wrap: wrap;
     box-shadow: 5px 5px 10px rgba(0,0,0,.4),-5px 5px 10px rgba(0,0,0,.4);
+    background: white;
 }
 .zIndexedElement > .header
 {
@@ -22,6 +26,7 @@
     margin: 0 10px;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .zIndexedElement > .header > h2
 {
@@ -34,11 +39,21 @@
     justify-content: space-around;
     align-items: center;
 }
+.zIndexedElement > div.header
+{
+
+}
 .zIndexControl
 {
     display:flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
-.zIndexControl > div
+.zIndexControl > div.counter
+{
+    font-size: 18px;
+}
+.zIndexControl > div.arrowControl
 {
     width:25px;
     height:25px;
@@ -47,10 +62,20 @@
     line-height: 26px;
     cursor:pointer;
     transition: .2s;
+    border:1px solid black;
+    margin-left:5px;
 }
-.zIndexControl > div
+.zIndexControl > div.arrowControl:hover
 {
-
+    color:white;
+    background: black;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.4),-2px 2px 5px rgba(0,0,0,.4);
+}
+.zIndexControl > div.arrowControl:active
+{
+    color:#ddd;
+    background: #555;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.4),-2px 2px 5px rgba(0,0,0,.4);
 }
 
 /*ID specific style*/
