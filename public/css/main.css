@@ -1,0 +1,75 @@
+*
+{
+    padding:0;
+    margin:0;
+    font-size: 16px;
+}
+
+/*General styling for components*/
+.zIndexedElement
+{
+    display: flex;
+    margin:20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.4),-5px 5px 10px rgba(0,0,0,.4);
+}
+.zIndexedElement > .header
+{
+    display: flex;
+    width:100%;
+    margin: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.zIndexedElement > .header > h2
+{
+    font-size: 32px;
+}
+.zIndexedElement > .body
+{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.zIndexControl
+{
+    display:flex;
+}
+.zIndexControl > div
+{
+    width:25px;
+    height:25px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 26px;
+    cursor:pointer;
+    transition: .2s;
+}
+.zIndexControl > div
+{
+
+}
+
+/*ID specific style*/
+#header
+{
+    top:0;
+    margin:0;
+    height:100px;
+    width:100%;
+}
+#sidebar
+{
+    width:200px;
+    margin:0;
+    box-shadow: none;
+}
+#content
+{
+    margin-top: 100px;
+    margin-left:200px;
+    padding:2px;
+}

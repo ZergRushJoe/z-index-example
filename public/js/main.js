@@ -3,16 +3,23 @@ Vue.component('z-index-item',
     {
         props:['name','z','position','id'],
         template:   `
-                        <div v-bind:id="id">
-                            <h2>{{ name }}</h2>
-                            <zindex-controller v-bind:target=" id "></zindex-controller>
+                        <div v-bind:id="id" class="zIndexedElement">
+                            <div class="header">
+                                <h2>{{ name }}</h2>
+                                <zindex-controller v-bind:target=" id "></zindex-controller>
+                            </div>
+                            <div class="body">
+                            </div>
                         </div>
                     `,
         mounted:function()
         {
-            this.refEl = document.getElementById(this.id);
-            this.refEl.style.zIndex = this.z;
-            this.refEl.style.position = this.position;
+            if(this.id && this.id != "")
+            {
+                this.refEl = document.getElementById(this.id);
+                this.refEl.style.zIndex = this.z;
+                this.refEl.style.position = this.position;
+            }
         }
     });
 Vue.component('zindex-controller',
