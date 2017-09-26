@@ -5,6 +5,8 @@
     padding:0;
     margin:0;
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 /*General styling for components*/
@@ -16,8 +18,12 @@
     align-items: center;
     flex-wrap: wrap;
     box-shadow: 5px 5px 10px rgba(0,0,0,.4),-5px 5px 10px rgba(0,0,0,.4);
+<<<<<<< HEAD
     background:white;
 
+=======
+    background: white;
+>>>>>>> e3a733e840e4d32f67ab4407c3e9fc7ba892af80
 }
 .zIndexedElement > .header
 {
@@ -26,6 +32,7 @@
     margin: 0 10px;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .zIndexedElement > .header > h2
 {
@@ -38,9 +45,14 @@
     justify-content: space-around;
     align-items: center;
 }
+.zIndexedElement > div.header
+{
+
+}
 .zIndexControl
 {
     display:flex;
+<<<<<<< HEAD
     align-items: center;
 }
 .zIndexControl > div.zCounter
@@ -49,6 +61,15 @@
     font-size: 18px;
 }
 
+=======
+    flex-wrap: wrap;
+    align-items: center;
+}
+.zIndexControl > div.counter
+{
+    font-size: 18px;
+}
+>>>>>>> e3a733e840e4d32f67ab4407c3e9fc7ba892af80
 .zIndexControl > div.arrowControl
 {
     width:25px;
@@ -58,6 +79,7 @@
     line-height: 26px;
     cursor:pointer;
     transition: .2s;
+<<<<<<< HEAD
     border: 1px solid black;
     background: white;
     margin-right:2px;
@@ -66,13 +88,28 @@
 {
     background: black;
     color:white;
+=======
+    border:1px solid black;
+    margin-left:5px;
+}
+.zIndexControl > div.arrowControl:hover
+{
+    color:white;
+    background: black;
+>>>>>>> e3a733e840e4d32f67ab4407c3e9fc7ba892af80
     box-shadow: 2px 2px 5px rgba(0,0,0,.4),-2px 2px 5px rgba(0,0,0,.4);
 }
 .zIndexControl > div.arrowControl:active
 {
+<<<<<<< HEAD
     background: #555;
     color:#ddd;
     box-shadow: 1px 1px 5px rgba(0,0,0,.4),-1px 1px 5px rgba(0,0,0,.4);
+=======
+    color:#ddd;
+    background: #555;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.4),-2px 2px 5px rgba(0,0,0,.4);
+>>>>>>> e3a733e840e4d32f67ab4407c3e9fc7ba892af80
 }
 
 /*ID specific style*/
