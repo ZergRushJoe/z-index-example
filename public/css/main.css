@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 *
 {
+    font-family: 'Roboto', sans-serif;
     padding:0;
     margin:0;
     font-size: 16px;
@@ -14,6 +16,8 @@
     align-items: center;
     flex-wrap: wrap;
     box-shadow: 5px 5px 10px rgba(0,0,0,.4),-5px 5px 10px rgba(0,0,0,.4);
+    background:white;
+
 }
 .zIndexedElement > .header
 {
@@ -37,8 +41,15 @@
 .zIndexControl
 {
     display:flex;
+    align-items: center;
 }
-.zIndexControl > div
+.zIndexControl > div.zCounter
+{
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.zIndexControl > div.arrowControl
 {
     width:25px;
     height:25px;
@@ -47,10 +58,21 @@
     line-height: 26px;
     cursor:pointer;
     transition: .2s;
+    border: 1px solid black;
+    background: white;
+    margin-right:2px;
 }
-.zIndexControl > div
+.zIndexControl > div.arrowControl:hover
 {
-
+    background: black;
+    color:white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.4),-2px 2px 5px rgba(0,0,0,.4);
+}
+.zIndexControl > div.arrowControl:active
+{
+    background: #555;
+    color:#ddd;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.4),-1px 1px 5px rgba(0,0,0,.4);
 }
 
 /*ID specific style*/
@@ -63,13 +85,18 @@
 }
 #sidebar
 {
-    width:200px;
+    flex-wrap: wrap;
+    width:250px;
     margin:0;
     box-shadow: none;
+}
+#sidebar > div.header
+{
+    flex-wrap: wrap;
 }
 #content
 {
     margin-top: 100px;
-    margin-left:200px;
+    margin-left:250px;
     padding:2px;
 }
